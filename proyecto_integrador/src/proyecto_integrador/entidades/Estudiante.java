@@ -8,19 +8,19 @@ public class Estudiante {
   private String apellido;
   private String cedula;
   private int codigo_sicoa;
-  private Periodo periodo;
+  private Periodos periodos;
   private Nivel nivel;
 
     public Estudiante() {
     }
 
-    public Estudiante(int codigo, String nombre, String apellido, String cedula, int codigo_sicoa, Periodo periodo, Nivel nivel) {
+    public Estudiante(int codigo, String nombre, String apellido, String cedula, int codigo_sicoa, Periodos periodos, Nivel nivel) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.apellido = apellido;
         this.cedula = cedula;
         this.codigo_sicoa = codigo_sicoa;
-        this.periodo = periodo;
+        this.periodos = periodos;
         this.nivel = nivel;
     }
 
@@ -64,12 +64,12 @@ public class Estudiante {
         this.codigo_sicoa = codigo_sicoa;
     }
 
-    public Periodo getPeriodo() {
-        return periodo;
+    public Periodos getPeriodos() {
+        return periodos;
     }
 
-    public void setPeriodo(Periodo periodo) {
-        this.periodo = periodo;
+    public void setPeriodos(Periodos periodos) {
+        this.periodos = periodos;
     }
 
     public Nivel getNivel() {
@@ -79,6 +79,7 @@ public class Estudiante {
     public void setNivel(Nivel nivel) {
         this.nivel = nivel;
     }
+
     @Override
     public String toString() {
         return nombre; 

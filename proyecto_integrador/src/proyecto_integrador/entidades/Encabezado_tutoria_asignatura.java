@@ -9,7 +9,7 @@ public class Encabezado_tutoria_asignatura {
   private long codigo;
   private Date fecha;
   private Time hora;
-  private Periodo periodo;
+  private Periodos periodos;
   private String nombre_periodo;
   private int codigo_carrera;
   private String nombre_carrera;
@@ -34,11 +34,11 @@ public class Encabezado_tutoria_asignatura {
     public Encabezado_tutoria_asignatura() {
     }
 
-    public Encabezado_tutoria_asignatura(long codigo, Date fecha, Time hora, Periodo periodo, String nombre_periodo, int codigo_carrera, String nombre_carrera, Nivel nivel, String nombre_nivel, int codigo_paralelo, String nombre_paralelo, int codigo_asignatura, String nombre_asignatura, int codigo_modalidad, Ambito ambito, String motivo, String instancia_apoyo, int codigo_docente, String apellidos_docente, String nombre_docente, String cedula_docente, String observacion1, String observacion2, String observacion3) {
+    public Encabezado_tutoria_asignatura(long codigo, Date fecha, Time hora, Periodos periodos, String nombre_periodo, int codigo_carrera, String nombre_carrera, Nivel nivel, String nombre_nivel, int codigo_paralelo, String nombre_paralelo, int codigo_asignatura, String nombre_asignatura, int codigo_modalidad, Ambito ambito, String motivo, String instancia_apoyo, int codigo_docente, String apellidos_docente, String nombre_docente, String cedula_docente, String observacion1, String observacion2, String observacion3) {
         this.codigo = codigo;
         this.fecha = fecha;
         this.hora = hora;
-        this.periodo = periodo;
+        this.periodos = periodos;
         this.nombre_periodo = nombre_periodo;
         this.codigo_carrera = codigo_carrera;
         this.nombre_carrera = nombre_carrera;
@@ -85,12 +85,12 @@ public class Encabezado_tutoria_asignatura {
         this.hora = hora;
     }
 
-    public Periodo getPeriodo() {
-        return periodo;
+    public Periodos getPeriodos() {
+        return periodos;
     }
 
-    public void setPeriodo(Periodo periodo) {
-        this.periodo = periodo;
+    public void setPeriodos(Periodos periodo) {
+        this.periodos = periodos;
     }
 
     public String getNombre_periodo() {
