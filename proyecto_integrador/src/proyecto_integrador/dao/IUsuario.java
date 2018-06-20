@@ -1,7 +1,6 @@
-
 package proyecto_integrador.dao;
 
- import java.util.List;
+import java.util.List;
 import proyecto_integrador.entidades.Usuario;
 
 public interface IUsuario {
