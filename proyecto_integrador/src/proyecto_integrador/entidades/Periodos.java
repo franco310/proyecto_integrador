@@ -3,7 +3,7 @@ package proyecto_integrador.entidades;
 
 import java.util.Date;
 
-public class Periodo {
+public class Periodos {
   private int codigo;
   private String nombre;
   private Date fecha_inicio;
@@ -13,10 +13,10 @@ public class Periodo {
   private int codigo_sicoa;
   private int estado;
 
-    public Periodo() {
+    public Periodos() {
     }
 
-    public Periodo(int codigo, String nombre, Date fecha_inicio, Date fecha_fin, int tipo, String observaciones, int codigo_sicoa, int estado) {
+    public Periodos(int codigo, String nombre, Date fecha_inicio, Date fecha_fin, int tipo, String observaciones, int codigo_sicoa, int estado) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.fecha_inicio = fecha_inicio;
