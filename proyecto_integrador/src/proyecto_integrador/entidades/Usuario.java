@@ -1,9 +1,10 @@
 
 package proyecto_integrador.entidades;
+import java.sql.Timestamp;
 import java.util.*;
 
 public class Usuario {
-     private int codigo; 
+     private long codigo; 
      private String apellidos;
      private String nombres;
      private String identificacion;
@@ -13,17 +14,17 @@ public class Usuario {
      private String clave_respuesta;
      private String mail;
      private int estado;
-     private Date primer_acceso;
-     private Date utimo_acceso;
+     private Timestamp primer_acceso;
+     private Timestamp utimo_acceso;
      private String ultima_ip;
-     private Date fecha_modificacion;
+     private Timestamp fecha_modificacion;
      private String codigo_salt;
      private String ruta_firma;
 
     public Usuario() {
     }
 
-    public Usuario(int codigo, String apellidos, String nombres, String identificacion, String nombre_corto, String clave, String clave_pregunta, String clave_respuesta, String mail, int estado, Date primer_acceso, Date utimo_acceso, String ultima_ip, Date fecha_modificacion, String codigo_salt, String ruta_firma) {
+    public Usuario(long codigo, String apellidos, String nombres, String identificacion, String nombre_corto, String clave, String clave_pregunta, String clave_respuesta, String mail, int estado, Timestamp primer_acceso, Timestamp utimo_acceso, String ultima_ip, Timestamp fecha_modificacion, String codigo_salt, String ruta_firma) {
         this.codigo = codigo;
         this.apellidos = apellidos;
         this.nombres = nombres;
@@ -42,11 +43,11 @@ public class Usuario {
         this.ruta_firma = ruta_firma;
     }
 
-    public int getCodigo() {
+    public long getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(long codigo) {
         this.codigo = codigo;
     }
 
@@ -122,19 +123,19 @@ public class Usuario {
         this.estado = estado;
     }
 
-    public Date getPrimer_acceso() {
+    public Timestamp getPrimer_acceso() {
         return primer_acceso;
     }
 
-    public void setPrimer_acceso(Date primer_acceso) {
+    public void setPrimer_acceso(Timestamp primer_acceso) {
         this.primer_acceso = primer_acceso;
     }
 
-    public Date getUtimo_acceso() {
+    public Timestamp getUtimo_acceso() {
         return utimo_acceso;
     }
 
-    public void setUtimo_acceso(Date utimo_acceso) {
+    public void setUtimo_acceso(Timestamp utimo_acceso) {
         this.utimo_acceso = utimo_acceso;
     }
 
@@ -146,11 +147,11 @@ public class Usuario {
         this.ultima_ip = ultima_ip;
     }
 
-    public Date getFecha_modificacion() {
+    public Timestamp getFecha_modificacion() {
         return fecha_modificacion;
     }
 
-    public void setFecha_modificacion(Date fecha_modificacion) {
+    public void setFecha_modificacion(Timestamp fecha_modificacion) {
         this.fecha_modificacion = fecha_modificacion;
     }
 
@@ -169,6 +170,6 @@ public class Usuario {
     public void setRuta_firma(String ruta_firma) {
         this.ruta_firma = ruta_firma;
     }
-    
-     
+
+   
 }
